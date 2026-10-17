@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS integration Examplels</title>
+   <!-- Externals CSS File - Demonstrating External Styessheet-->
+<link rel="stylesheet" href="./style.css">
+<style>
+    /*internal CSS - This styles will only apply to this document*/
+    .highlight{
+        background-color:yellow;
+    
+    }
+    p{
+        font-size:large;
+        color:green;
+    }
+    /*Specific example of an ID selector*/
+    #headerDesign{
+        color:blue;
+        text-align:center;
+    }
+
+</style>
+
+<script>
+    //JavaScript Example for interactivity(no CSS here)
+    console.log('CSS Demostration Page');
+</script>
+</head>
+<body>
+    <header id="headerDesign">
+        <h1> welcome to the CSS Demo Page</h1>
+    </header>
+    <!-- inline CSS Example -->
+     <p style="color: red;font-size:20px;">This is an example of inline CSS used directly in an HTML element.</p>
+
+        <main>
+            <section id="home">
+                 <h2>introduction to CSS</h2>
+                <p>CSS stands for Cascading Style Sheets.It controls the layout and style of your HTMLvontent.</p>
+                <p class="highlight">This text is highlighted with a css class.</p>
+            </section>
+            <section id="about">
+            <h2>About CSS</h2>
+            <p>CSS can be applied in differnt ways to an HTML document.</p>
+                <ul>
+                    <li><strong>inline CSS </strong>: Directly within the HTML tag.</li>
+                    <li><strong>internal CSS</strong>:within a style tag in the head section.</li>
+                    <li><strong>External CSS</strong>Through an external .css file linked with the  <link> tag.</li>
+                </ul>
+            </section>
+            <section id="services">
+                <h2>Our Services</h2>
+                <p>Here are the services we offer:</p>
+                <ul class="services-list">
+                    <li>Web Design</li>
+                    <li>Web Development</li>
+                    <li>SEO Optimization</li>
+                </ul>
+            </section>
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>Have a question? <a href="contact@website.com">Email us</a>!</p>
+            </section>
+            <h3>Table Example</h3>
+            <table>
+                <caption>Sample Table</caption>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td>Jane</td>
+                    <td>25</td>
+                </tr>
+            </table>
+        </main>
+        <footer>
+            <p>2024 My Website</p>
+        </footer>
+
+</body>
+</html>
